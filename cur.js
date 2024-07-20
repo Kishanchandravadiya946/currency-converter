@@ -86,7 +86,7 @@ const updateExchangeRate = async () => {
     // const response = await fetch(url, options);
     const response=await fetch(url);
     const result = await response.json();
-    console.log(result);
+    // console.log(result);
     console.log(result.result.rate);
     const rate=result.result.rate.toFixed(3);
     // const rate=5;
