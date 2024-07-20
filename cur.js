@@ -110,6 +110,15 @@ const updateExchangeRate = async () => {
 
 window.addEventListener("load", () => {
   updateExchangeRate();
+  let loadCount=localStorage.getItem('pageLoadCount');
+  if(loadCount!==null){
+    loadCount=parseInt(loadCount)+1;
+  }
+  else{
+    loadCount=1;
+  }
+  localStorage.setItem('pageLoadCount',loadCount);
+  console.log(loadCount);
 });
 
 // document.getElementById('currinput').addEventListener('keydown',  (event)=>{
