@@ -124,7 +124,16 @@ form button {
 input {
   width: 100%;
 }
-
+/* Hide spinners in Chrome, Safari, Edge, Opera */
+/* input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+/* Hide spinners in Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
 .fromamount {
   width: 8rem;
 }

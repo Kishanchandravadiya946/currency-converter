@@ -112,14 +112,14 @@ window.addEventListener("load", () => {
   updateExchangeRate();
 });
 
-document.getElementById('currinput').addEventListener('keydown',  (event)=>{
-      keypress(event);
-});
+// document.getElementById('currinput').addEventListener('keydown',  (event)=>{
+//       keypress(event);
+// });
 // document.getElementById("currinput").addEventListener("input", updateExchangeRate());
 
-document.getElementById('currresult').addEventListener('keydown',(event)=>{
-  keypress(event);
-});
+// document.getElementById('currresult').addEventListener('keydown',(event)=>{
+//   keypress(event);
+// });
 const keypress = (event) => {
   // console.log("present keypress");
 
